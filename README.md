@@ -1,5 +1,5 @@
 # what is this
-a set of terraforma and shell scripts to configure an example fastly and wordpress setup
+a set of terraform and shell scripts to configure an example fastly and wordpress setup
 
 # what does it do
 - creates a virtual machine on google cloud, installs wordpress and the fastly wordpress plugin
