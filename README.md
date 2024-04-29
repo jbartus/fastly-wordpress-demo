@@ -1,10 +1,8 @@
 # what is this
-- short term: a place for me to learn and rough out minimal examples of fastly products with terraform
-- medium term: a foundation on which to build live product demonstrations
-- long term: a resource for managing bespoke partner demonstration environments
+a set of terraforma and shell scripts to configure an example fastly and wordpress setup
 
 # what does it do
-- creates a virtual machine on google cloud, installs magento and the fastly magento plugin
+- creates a virtual machine on google cloud, installs wordpress and the fastly wordpress plugin
 - creates a fastly service with edge rate-limiting, image-optimizaiton and bigquery logging to sit in front of it
 - attaches an ngwaf@edge deployment to the service
 - spools up some attack tooling to generate traffic and graph data
