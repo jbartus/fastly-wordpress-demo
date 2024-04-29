@@ -3,7 +3,6 @@
 #######################################################################
 
 resource "terraform_data" "wordpress_setup" {
-  count = var.wordpress == true ? 1 : 0
 
   connection {
     type        = "ssh"

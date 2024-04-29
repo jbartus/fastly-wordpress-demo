@@ -42,30 +42,6 @@ variable "ssh_priv_key" {
   default = "~/.ssh/id_rsa"
 }
 
-variable "magento" {
-  type = bool
-}
-
-variable "magento_pub_key" {
-  type = string
-}
-
-variable "magento_priv_key" {
-  type = string
-}
-
-variable "hyva" {
-  type = bool
-}
-
-variable "hyva_ssh_priv_key" {
-  type = string
-}
-
-variable "wordpress" {
-  type = bool
-}
-
 variable "puppeteer" {
   type = bool
 }

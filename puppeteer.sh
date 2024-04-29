@@ -20,7 +20,5 @@ npm install puppeteer
 # set the target url
 export SITE_URL=https://${url}
 
-# run three virtual users on a loop
+# run virtual users on a loop
 nohup bash -c 'while true; do node homepage.js && sleep `shuf -i 2-10 -n1`; done &'
-sleep 10 && nohup bash -c 'while true; do node promobutton.js && sleep `shuf -i 2-10 -n1`; done &'
-sleep 20 && nohup bash -c 'while true; do node shopper.js && sleep `shuf -i 2-10 -n1`; done &'
