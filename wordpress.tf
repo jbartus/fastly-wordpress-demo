@@ -28,7 +28,8 @@ resource "terraform_data" "wordpress_setup" {
 
   provisioner "remote-exec" {
     inline = [
-      "chmod +x modsec.sh wordpress.sh fastly-wordpress-plugin.sh",
+      "chmod +x modsec.sh wordpress.sh",
+      #"chmod +x modsec.sh wordpress.sh fastly-wordpress-plugin.sh",
       "until grep -q 'startup-script exit status 0' /var/log/syslog; do sleep 10; done",
       "./modsec.sh",
       "url=${var.site_name}.freetls.fastly.net ./wordpress.sh"
