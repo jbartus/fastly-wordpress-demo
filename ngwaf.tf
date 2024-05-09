@@ -55,12 +55,12 @@ resource "sigsci_corp_rule" "sanctions" {
   }
 }
 
-resource "sigsci_site_rule" "nobotcomments" {
+resource "sigsci_site_rule" "wp-login" {
   site_short_name = sigsci_edge_deployment.ngwaf_edge_demo.site_short_name
   type            = "request"
   group_operator  = "all"
   enabled         = true
-  reason          = "no yapping"
+  reason          = "no bots pls"
   requestlogging  = "sampled"
   expiration      = ""
 
@@ -68,7 +68,7 @@ resource "sigsci_site_rule" "nobotcomments" {
     type     = "single"
     field    = "path"
     operator = "equals"
-    value    = "/wp-comments-post.php"
+    value    = "/wp-login.php"
   }
 
   actions {
